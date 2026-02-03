@@ -154,6 +154,7 @@ def face_to_idm(
         'Outdoors': 'EXTERNAL',
         'Ground': 'GROUND',
         'Surface': 'INTERNAL',
+        'Adiabatic': 'INTERNAL'
     } # needs maybe more boundary conditions
     name = face.identifier
     type_ = _face_mapper[str(face.type)]

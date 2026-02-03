@@ -346,24 +346,23 @@ def classify_construction(constr):
     return "unknown"
 
 
-def classify_opaque_construction_usage(model):
-    usage = {}
+# def classify_opaque_construction_usage(model):
+#     usage = {}
 
-    for face in model.faces:
-        constr = face.properties.energy.construction
-        if not constr:
-            continue
+#     for face in model.faces:
+#         constr = face.properties.energy.construction
+#         if not constr:
+#             continue
 
-        if not hasattr(constr, "identifier"):
-            continue
+#         if not hasattr(constr, "identifier"):
+#             continue
 
-        cid = constr.identifier
-        ftype = face.type.name
+#         cid = constr.identifier
+#         ftype = face.type.name
 
-        usage.setdefault(cid, set()).add(ftype)
+#         usage.setdefault(cid, set()).add(ftype)
 
-    return usage
-
+#     return usage
 
 
 
