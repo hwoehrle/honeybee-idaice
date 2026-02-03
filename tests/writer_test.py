@@ -44,7 +44,3 @@ def test_group_attribute():
     )
     content = bldg_file.read_text(encoding='UTF-8')
     assert '(:PAR :N GROUP :V "Lobby")' in content
-
-
-if __name__ == "__main__":
-    test_model()
